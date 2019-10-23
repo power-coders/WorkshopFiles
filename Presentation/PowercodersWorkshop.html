@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Introduction to Javascript  ~ Powercoders</title>
+
+    <meta name="description" content="Introduction to Programming">
+    <meta name="author" content="Powerdcoders">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/powercoders.css" id="theme">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+      <div class="slides">
+        <section>
+					<img src="https://powercoders.org/img/powercoders-logo.svg" alt="Powercoders" class="noborder" />
+          <h1>Powercoders Workshop</h1>
+          <h3>Introduction into Programming</h3>
+        </section>
+        <section>
+          <h2>Who are we?</h2>
+        </section>
+        <section>
+          <h2>What will we do today?</h2>
+        </section>
+        <ul>
+          <li></li>
+        </ul>
+        <section>
+          <h2>Web Development</h2>
+          <p>Web Devolpment has two parts:</p>
+          <ul>
+            <li><strong>Frontend</strong>: How the Website looks and behaves.</li>
+            <li><strong>Backend</strong>: How to save, process and deliever data.</li>
+          </ul>
+        </section>
+          
+        <section>
+          <h2>Frontend vs. Backend</h2>
+          <p>In Frontend Development there are three parts you need to master.</p>
+          <ul>
+            <li>HTML: Defines the content</li>
+            <li>CSS: Styles the content</li>
+            <li>Javascript: Interactivity of the content</li>
+          </ul>
+          <p>Backend is much more diverse. It includes Database, programming, servers and so on. We will not focus on it today.</p>
+        </section>
+        <section>
+          <h2>HTML</h2>
+          <p>HTML is not a programming language but a <strong>Markup</strong> Language. 
+            In a Markup Language you can define the different elements with tags.
+            This way our browser can differentiate between text and other elements. 
+            <!-- Elements include text, headings, lists, images, input fields and the list goes on.  --></p>
+        </section>
+        <section>
+          <h2>HTML</h2>
+          <pre><code>&lt;h2&gt;HTML&lt;/h2&gt;</code></pre>
+          As you can see you need a opening tag then you define the content and then the closing tag
+          <pre><code>&lt;a href="www.duck.com"&gt;DuckDuckGo&lt;/a&gt;</code></pre>
+          We can define additional information in the opening tag. In this case we defined a hyperlink.
+        </section>
+        <section>
+          <h2>CSS</h2>
+          <p>CSS is short for Cascading Style Sheet. With CSS you can style every element as you wish. 
+            Most essential you can change size, color and position of elements.</p>
+        </section>
+        <section>
+          <h2>CSS</h2>
+          <p>Here you see a css example: </p>
+          <pre><code>p {
+  font-size: 1.9 rem;
+  color: red;
+} </code></pre>
+        <p>There are some ways to select the specific element you want to theme. The example above will theme all content inside a p-tag.</p>
+        </section>
+        <section>
+          <h2>Classes and IDs</h2>
+          <p></p>
+        </section>
+        <section>
+          <h2>Javascript</h2>
+          <p>Javascript is a high-level programming language. You can do anything with Javascript. 
+            Javascript is giving you a lot of option to interact with the HTML elements. 
+            Most importantly you can change style and content of elements.
+            This makes it possible to add interactivity to a website.
+             </p>
+        </section>
+        <section>
+            <h2>Programming</h2>
+            <ul>
+                <li>Programming is the art of breaking a problem down into smaller problems.</li>
+                <li>Finding the solutions to these smaller problems.</li>
+              <li>Putting these pieces back together.</li>
+          </section>
+        <section>
+            <h2>Building blocks of Programming:</h2>
+            <ul>
+              <li>Variables</li>
+              <li>Conditions</li>
+              <li>Loops</li>
+              <li>Functions</li>
+            </ul>
+        </section>
+        <section>
+          <h2>Variables</h2>
+          <p>Variables are the way we store and access data in programming.
+            We can store simple things like numbers, strings (text) but also mor complex like objects and arrays.</p>
+            <pre><code>let Programming = 'cool';
+let numberOfHouses = 542;
+let numberOfPersonsLivingInHouses = 2.5 * numberOfHouses;
+            </code></pre>
+        </section>
+        <section>
+          <h2>Conditions</h2>
+          <p>Conditions is the way we steer the program. <br>
+          A condition is for example if the weather is nice then go outside ellse stay inside.</p>
+          <pre><code>if(weather == 'nice){
+    goOutside();
+} else {
+  stayInside();
+}</code></pre>
+        </section>
+        <section>
+          <h2>Loops</h2>
+          <p>With Loops our programms get really powerful, It is a way to run lines of code as often as you want.
+            An example would be: As long as the music is playing draw circles.
+            We have a condition
+            There are a few loop options available. We will have a look at the most used one the for loop.
+          </p>
+        </section>
+        <section>
+          <h2>For-Loop</h2>
+          <p>The For-Loop has three part, the initialization which is only done one time ate the beginning, 
+            then the condition which determines when to stop and then there is a command that gets executed every loop we make. </p>
+            <pre><code>for(let index = 0; index &lt; 100; index = index + 1){
+    drawCircle();
+} </code></pre>
+        </section>
+        <section>
+          <h2>Powercoders</h2>
+        </section>
+        <section>
+          <h2>Useful links</h2>
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </section>
+        <section>
+          <h2></h2>
+        </section>
+      </div>
+      <footer>
+        <div class="copyright">
+          &copy; 2019 Powercoders ZRH
+        </div>
+      </footer>
+    </div><!-- Close reveal -->
+
+    
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+  </body>
+</html>
