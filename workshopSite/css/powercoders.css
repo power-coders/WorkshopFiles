@@ -17,38 +17,98 @@ html {
   body{
       display:flex;
       flex-wrap: wrap;
-      overflow-x:hidden;
+      overflow-x: hidden;
   }
-  /* center main blocks within body */
+
+/* center main blocks within body */
   header {
     position: relative;
     height: 100vh;
     width: 100vw;
   }
-  /* Adding a margin to our main body */
+/* Adding a margin to our main body */
   main {
     margin: 1rem auto;
     max-width: 112rem;
     padding: 2rem;
     width: 100vw;
+
+    /* The following are used to position elements correctly */
+    display: flex;
+    /* wrapping flex items (wrap or nowrap) */
+    flex-wrap: wrap;
+    /* defining direction of flex items (row or column) */
+    flex-direction: row;
+    /* aligning flex items (horizontal for row, vertical for column) */
+    justify-content: space-evenly;
+    /* aligning flex items (vertical for row, horizontal for column) */
+    align-items: flex-start;
   }
-/* here we define how big the image is displayed and how it is cropped, we also add animations */
+
+  footer {
+    width: 100vw;
+    display: block;
+  }
+
+  /* These specify how the elements should be positioned and how big they should be */
+  aside {
+    flex: 1;
+  }
+  
+  article {
+    flex: 2;
+    margin-left: 8%;
+  }
+
+  /* The following are used to make the list of Ingredients readable */
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  dt {
+    flex: 1;
+    max-width: 5%;
+    padding-bottom: 1rem;
+  }
+  
+  dd {
+    flex: 9;
+    min-width: 82%;
+    padding: 0 10% 1rem 0;
+  }
+
+/* here we define how big the header image is and how it is cropped, we also add animations. To theme the image container we use something called a class. Google CSS class to learn more.*/
   .img-container{
     width:100vw;
     height: 90vh;
     position: relative;
     background-size: cover;
+    /* Transitions are sometimes tricky that's why we add browser specific commands here */
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.3s ease-in-out;
     transition: all 1.3s ease-out;
     background-image: url("../img/Pizza_1.jpg");
   }
-  
+/* Here we us an ID to select the element. You can quickly see that this method is used by the #. */
   #numOfPersons{
     width: 30px;
     text-align: right;
     direction: rtl;
   }
+
+  ul{
+    /* These make our top navigation bar horizontal and nicely seperated */
+      display: flex;
+      justify-content: space-evenly;
+      /* With this we remove points from a list*/
+      list-style: none;
+  }
+  
+
  /* Theming and positoning of our title */
   h1 {
     background: rgba(255,255,255,0.5);
@@ -67,7 +127,7 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    /* The z-index is similar principle to the layers in Photoshop. The higher the z-index the higher it is in the stack. */
+    /* The z-index is similar in principle to the layers in Photoshop. The higher the z-index the "more in front" it is. */
     z-index: 1;
   }
   
@@ -79,61 +139,12 @@ html {
     text-transform: uppercase;
   }
   
-  ul{
-    /* These make our top navigation bar horizontal and nicely seperated */
-      display: flex;
-      justify-content: space-evenly;
-      /* With this we remove points */
-      list-style: none;
-  }
-  
   p {
     line-height: 1.45;
     margin: 2rem 0;
   }
 
-  /* use display:flex for layout and positioning */
-/* flex container */
-main {
-    display: flex;
-    /* wrapping flex items (wrap or nowrap) */
-    flex-wrap: wrap;
-    /* defining direction of flex items (row or column) */
-    flex-direction: row;
-    /* aligning flex items (horizontal for row, vertical for column) */
-    justify-content: space-evenly;
-    /* aligning flex items (vertical for row, horizontal for column) */
-    align-items: flex-start;
+  /* Here you can theme your footer */
+  .footerStyle{
+    color: black;
   }
-  
-  dl {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  
-  /* flex items, These specify how the elements should be positioned and how big they should be */
-  aside {
-    flex: 1;
-  }
-  
-  article {
-    flex: 2;
-    margin-left: 8%;
-  }
-  
-  dt {
-    flex: 1;
-    max-width: 5%;
-    padding-bottom: 1rem;
-  }
-  
-  dd {
-    flex: 9;
-    min-width: 82%;
-    padding: 0 10% 1rem 0;
-  }
-  
-  

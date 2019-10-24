@@ -50,5 +50,5 @@ function slideImage() {
         picturePointer = 1;
     }
     // And here we finally change the image
-    document.getElementById("background-image").style.backgroundImage = "url(img/Pizza_" + picturePointer + ".jpg)";
+    document.getElementsByClassName("img-container")[0].style.backgroundImage = "url(img/Pizza_" + picturePointer + ".jpg)";
 }
