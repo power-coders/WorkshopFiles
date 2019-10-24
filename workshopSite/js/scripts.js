@@ -29,10 +29,13 @@ function recalculateIngre() {
     if (newNumberOfPortions == 0 || isNaN(newNumberOfPortions)) {
         return;
     }
+
+    let newAmountNeeded;
     // Here we need all the things we set up at the beginning of the file. 
     // We write the new value we calculate into the objects of the Ingredientlist we got
     for (let index = 0; index < elemListOfIngredients.length; index++) {
-        elemListOfIngredients[index].innerHTML = newNumberOfPortions / standardNumberOfPortions * listOfIngredients[index];
+        newAmountNeeded = newNumberOfPortions / standardNumberOfPortions * listOfIngredients[index];
+        elemListOfIngredients[index].innerHTML = newAmountNeeded;
     }
     // Here we change the placeholder of the input field, that if you delete the number you typed in you still see what you have typed.
     document.getElementById("numOfPersons").placeholder = newNumberOfPortions;
