@@ -1,0 +1,57 @@
+Send them the link to vscode and files before and ask them to install it!
+
+First Introduction of yourself and participants 
+
+Explain web development. 
+
+Quickly Explain html and css, then start coding.
+
+After creating the file directly save with .html exstensions to prevent problems.
+
+Then start coding. Headings, p, image that they can download, add a link, add a style.
+
+After finishing with the website make short recap of HTML and CSS with the slides.
+
+Break
+
+With the example websitee show them the structure of seperating the files. 
+
+Then show the html structure with head and body. 
+
+Let them change the footer, let them add a topping, let them change the title and retheme what they want. Ask them what they want to do.
+
+Make a slide with some fun css commands, for them to try out. 
+
+Along the line show them the inspect function and also comments.
+
+Then onto programming. Explain that it is a way of thinking and that learning a language is then only the extension of this way of thinking.
+
+Explain variables and conditions then make image slider example.
+
+If time go over loops and functions.
+
+Show them some examples.
+
+Tell them how to proceed: Do it yourself, online tutorials, inspect.
+
+Then Info Session
+
+Goals:  
+    Show them that creating a website is not hard: done with creating it.
+    Give them ways of expanding their knowledge: done with example and tutorials and inspect
+    Keep them engaged, let them explore: done with giving them the option to choose, needs to be done, example css commands slide.
+    Give them a solid foundation to continue their excurses in programming: done, I think so.
+    Get them interested in Powercoders: Done, especially if past participant is present and can tell their experience.
+    Don't confuse them: See do and dont
+        
+Do
+    Keep it simple.
+    Explain what you are doing at the moment.
+    If you explain something always something new, show them (This is especially for the structure part)
+
+
+Dont
+    No knowledge questions.
+    Don't be to fast.
+    Don't introduce something without giving the goal
+

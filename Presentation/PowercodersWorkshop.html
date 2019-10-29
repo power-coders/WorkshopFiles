@@ -1,298 +1,308 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Introduction to Javascript  ~ Powercoders</title>
+  <title>Introduction to Javascript ~ Powercoders</title>
 
-    <meta name="description" content="Introduction to Programming">
-    <meta name="author" content="Powerdcoders">
+  <meta name="description" content="Introduction to Programming">
+  <meta name="author" content="Powerdcoders">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/powercoders.css" id="theme">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/powercoders.css" id="theme">
 
-    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 
-		<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
-      <div class="slides">
-        <section>
-					<img src="https://powercoders.org/img/powercoders-logo.svg" alt="Powercoders" class="noborder" />
-          <h1>Powercoders Workshop</h1>
-          <h3>Introduction into Programming</h3>
-        </section>
-        <section>
-          <h2>Who are we?</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section>
-          <h2>What will we do today?</h2>
-          <ul>
-            <li>We will install a text editor.</li>
-            <li>Learn something about Web Development.</li>
-            <li>Do our first Website.</li>
-            <li>Change a existing Website.</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Text Editor</h2>
-          <p>A text editor is a program that has additional features that allow for nicer programming.
-            This includes syntax highlighting, syntax check, text completion and so on.
-            There are a lot of text editors. We will use VSCode. You can find it here:
-            <a href="https://bit.ly/32M4xLK">bit.ly/32M4xLK</a> <small>(Or google vscode)</small>.
-          </p>
-        </section>
-        <section>
-          <h2>Web Development</h2>
-          <p>Web Devolpment has two parts:</p>
-          <ul>
-            <li><strong>Frontend</strong>: How the Website looks and behaves.</li>
-            <li><strong>Backend</strong>: How to save, process and deliever data.</li>
-          </ul>
-          <p>We will not do any Backend today.</p>
-        </section>
-          
-        <section>
-          <h2>Frontend</h2>
-          <p>In Frontend Development there are three parts you need to master.</p>
-          <ul>
-            <li>HTML: Defines the content</li>
-            <li>CSS: Styles the content</li>
-            <li>Javascript: Interactivity of the content</li>
-          </ul>
-          <p>You can thik of it like a body; HTML is the skeleton; CSS the skin and hair; JS are the muscles.</p>
-        </section>
-        <section>
-          <h2>HTML</h2>
-          <p>HTML is not a programming language but a <strong>Markup</strong> Language. 
-            In a Markup Language you can define the different elements with tags.
-            This way our browser can differentiate between text and other elements. 
-            <!-- Elements include text, headings, lists, images, input fields and the list goes on.  --></p>
-        </section>
-        <section>
-          <h2>HTML</h2>
-          <pre class="fragment fade-in" data-fragment-index="1"><code>&lt;h2&gt;HTML&lt;/h2&gt;</code></pre>
-          <p class="fragment fade-in" data-fragment-index="1">
-            As you can see you need a opening tag then you define the content and then the closing tag.</p>
-          <pre class="fragment fade-in" data-fragment-index="2"><code>&lt;a href="www.duck.com"&gt;DuckDuckGo&lt;/a&gt;</code></pre>
-          <p class="fragment fade-in" data-fragment-index="2">We can define additional information in the opening tag. 
-            In this case we defined where a hyperlink should point to.</p>
-        </section> 
-        <section>
-          <h2>CSS</h2>
-          <p>CSS is short for Cascading Style Sheet. With CSS you can style every element as you wish. 
-            Most essential you can change size, color and position of elements.</p>
-        </section>
-        <section>
-          <h2>CSS</h2>
-          <p>Here you see a css example: </p>
-          <pre><code>p {
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <img src="https://powercoders.org/img/powercoders-logo.svg" alt="Powercoders" class="noborder" />
+        <h1>Powercoders Workshop</h1>
+        <h3>Introduction into Programming</h3>
+      </section>
+      <section>
+        <h2>Who are we?</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section>
+        <h2>What will we do today?</h2>
+        <ul>
+          <li>We will install a text editor.</li>
+          <li>Learn something about Web Development.</li>
+          <li>Do our first Website.</li>
+          <li>Change a existing Website.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Text Editor</h2>
+        <p>A text editor is a program that has additional features that allow for nicer programming.
+          This includes syntax highlighting, syntax check, text completion and so on.
+          There are a lot of text editors. We will use VSCode.
+        </p>
+      </section>
+      <section>
+        <h2>Web Development</h2>
+        <p>Web Devolpment has two parts:</p>
+        <ul>
+          <li><strong>Frontend</strong>: How the Website looks and behaves.</li>
+          <li><strong>Backend</strong>: How to save, process and deliever data.</li>
+        </ul>
+        <p>We will not do any Backend today.</p>
+      </section>
+
+      <section>
+        <h2>Frontend</h2>
+        <p>In Frontend Development there are three parts you need to master.</p>
+        <ul>
+          <li>HTML: Defines the content</li>
+          <li>CSS: Styles the content</li>
+          <li>Javascript: Interactivity of the content</li>
+        </ul>
+        <p>You can thik of it like a body; HTML is the skeleton; CSS the skin and hair; JS are the muscles.</p>
+      </section>
+      <section>
+        <h2>HTML</h2>
+        <p>HTML is not a programming language but a <strong>Markup</strong> Language.
+          In a Markup Language you can define the different elements with tags.
+          This way our browser can differentiate between text and other elements.
+          <!-- Elements include text, headings, lists, images, input fields and the list goes on.  -->
+        </p>
+      </section>
+
+      <section>
+        <h2>CSS</h2>
+        <p>CSS is short for Cascading Style Sheet. With CSS you can style every element as you wish.
+          Most essential you can change size, color and position of elements.</p>
+      </section>
+      <section>
+        <h2>HTML</h2>
+        <pre><code>&lt;h2&gt;HTML&lt;/h2&gt;</code></pre>
+        <p>
+          As you can see you need a opening tag then you define the content and then the closing tag.</p>
+        <pre><code>&lt;a href="https://www.duck.com"&gt;DuckDuckGo&lt;/a&gt;</code></pre>
+        <p>We can define additional information in the opening tag.
+          In this case we defined where a hyperlink should point to.</p>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <p>Here you see a css example: </p>
+        <pre><code>p {
   font-size: 1.9 rem;
   color: red;
 } </code></pre>
-        <p>There are two parts to this. Before the brackets we declare which elements should be themed. 
-          In this case all p elements are themed. In side the brackets we specify the theming. 
-          </p>
-        </section>
-        <section>
-          <h2>Create your website</h2>
-          <p>Open the text editor.</p>
-        </section>
-        <section>
-          <h2>Bigger projects</h2>
-          <p>You created your first website, <strong>Congratulations!</strong><br>
-            We prepared a website for you to experiment with. You find it here:
-            <a href="https://github.com/Powercoders-ZRH/WorkshopZRHforTsri">bit.ly/2N9P55q</a>
-            <br>On there you also find this presentation.
-          </p>
-        </section>
-        <section>
-          <h2>Structure</h2>
-          <p>As you can see we have our html file and then we have additional folders. 
-            It is recommended to seperate the three parts of your code to keep the overview.</p>
-            With these lines in the HTML file we link them all toghether.
-            <pre><code>&lt;link rel="stylesheet" href="css/powercoders.css"&gt;
+        <p>There are two parts to this. Before the brackets we declare which elements should be themed.
+          In this case all p elements are themed. In side the brackets we specify the theming.
+        </p>
+      </section>
+      <section>
+        <h2>Create your website</h2>
+      </section>
+      <section>
+        <h2>Some CSS commands</h2>
+        <ul>
+          <li>color: blue;</li>
+          <li>font-size: 18px</li>
+          <li>text-transform: uppercase;</li>
+          <li>margin: 30px;</li>
+          <li>text-align: left;</li>
+          <li>line-height: 40px;</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Congratulations!</h2>
+        <p>You created your first website! <br>
+          We will do a break now and then continue with the example page we already send you.
+          You can also find it here.
+          <a href="https://github.com/Powercoders-ZRH/WorkshopZRHforTsri">bit.ly/2N9P55q</a>
+        </p>
+      </section>
+      <section>
+        <h2>Structure</h2>
+        <p>As you can see we have our html file and then we have additional folders.
+          It is recommended to seperate the three parts of your code to keep the overview.</p>
+        <p>With these lines in the HTML file we link them all toghether.</p>
+        <pre><code>&lt;link rel="stylesheet" href="css/powercoders.css"&gt;
               ... 
 &lt;script src="js/scripts.js"&gt;&lt;/script&gt;</code></pre>
+      </section>
+      <section>
+        <h2>HTML structure</h2>
+        <p>The HTML file also has a structure. First you find the header.
+          In the header you find infromation about the website, you also find stylesheets.
+          After the header there is the body, there we define the elements.</p>
+      </section>
+      <section>
+        <h2>Javascript</h2>
+        <p>Javascript is a high-level programming language. You can do anything with Javascript.
+          Javascript is built to interact with the HTML elements.
+          Most importantly you can change style and content of elements.
+          This makes it possible to add interactivity to a website.</p>
+      </section>
+      <section>
+        <section>
+          <h2 style="float:left;">Programming</h2>
+          <ul>
+            <li>Programming is the art of breaking a problem down into smaller problems.</li>
+            <li>Finding the solutions to these smaller problems.</li>
+            <li>Putting these pieces back together.</li>
+          </ul>
         </section>
         <section>
-          <h2>HTML structure</h2>
-          <p>The HTML file also has a structure. First you find the header. 
-            In the header you find infromation about the website, you also find stylesheets.
-            After the header there is the body, there we define the elements.</p>
+          <h2>Building blocks of Programming:</h2>
+          <ul>
+            <li>Variables</li>
+            <li>Conditions</li>
+            <li>Loops</li>
+            <li>Functions</li>
+          </ul>
         </section>
         <section>
-          <h2>Javascript</h2>
-          <p>Javascript is a high-level programming language. You can do anything with Javascript. 
-            Javascript is built to interact with the HTML elements. 
-            Most importantly you can change style and content of elements.
-            This makes it possible to add interactivity to a website.</p>
-        </section>
-        <section>
-          <section>
-              <h2 style="float:left;">Programming</h2> 
-              <ul>
-                <li>Programming is the art of breaking a problem down into smaller problems.</li>
-                <li>Finding the solutions to these smaller problems.</li>
-                <li>Putting these pieces back together.</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Building blocks of Programming:</h2>
-              <ul>
-                <li>Variables</li>
-                <li>Conditions</li>
-                <li>Loops</li>
-                <li>Functions</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Variables</h2>
-              <p>Variables are the way we store and access data in programming.
-                We can store simple things like numbers, strings (text) but also mor complex like objects and arrays.</p>
-              <pre><code>let Programming = 'nice';
+          <h2>Variables</h2>
+          <p>Variables are the way we store and access data in programming.
+            We can store simple things like numbers, strings (text) but also mor complex like objects and arrays.</p>
+          <pre><code>let Programming = 'nice';
 let numberOfHouses = 542;
 let numberOfPersonsLivingInHouses = 2.5 * numberOfHouses;</code></pre>
-            </section>
-            <section>
-              <h2>Conditions</h2>
-              <p>Conditions is the way we steer the program. <br>
-              A condition is for example if the weather is nice then go outside else stay inside.</p>
-              <pre><code>if(weather == 'nice'){
+        </section>
+        <section>
+          <h2>Conditions</h2>
+          <p>Conditions is the way we steer the program. <br>
+            A condition is for example if the weather is nice then go outside else stay inside.</p>
+          <pre><code>if(weather == 'nice'){
     goOutside();
 } else {
   stayInside();
 }</code></pre>
-            </section>
-            <section>
-              <h2>Loops</h2>
-              <p>With Loops our programms get really powerful, It is a way to run lines of code as often as you want.
-                An example would be: As long as the music is playing draw circles.
-                We have a condition
-                There are a few loop options available. We will have a look at the most used one the for loop.
-              </p>
-            </section>
-            <section>
-              <h2>For-Loop</h2>
-              <p>The For-Loop has three part, the initialization which is only done one time ate the beginning, 
-                then the condition which determines when to stop and then there is a command that gets executed every loop we make. </p>
-                <pre><code>for(let index = 0; index &lt; 100; index = index + 1){
+        </section>
+        <section>
+          <h2>Loops</h2>
+          <p>With Loops our programms get really powerful, It is a way to run lines of code as often as you want.
+            An example would be: As long as the music is playing draw circles.
+            We have a condition
+            There are a few loop options available. We will have a look at the most simple one.
+          </p>
+        </section>
+        <section>
+          <h2>While-Loop</h2>
+          <p>The For-Loop has three part, the initialization which is only done one time ate the beginning,
+            then the condition which determines when to stop and then there is a command that gets executed every loop
+            we make. </p>
+          <pre><code>while(numberOfCircles &lt; 100){
     drawCircle();
+    numberOfCircles = numberOfCircles + 1;
 } </code></pre>
-          </section>
-          <section>
-            <h2>Functions</h2>
-            <p>Functions are a block of code to perform a particular task.
-              Once you defined a function you can call them to perfrom this task.
-              They can accept value and can return one value.</p>
-              <pre><code>function sumTwoNumbers(a, b){
+        </section>
+        <section>
+          <h2>Functions</h2>
+          <p>Functions are a block of code to perform a particular task.
+            Once you defined a function you can call them to perfrom this task.
+            They can accept value and can return one value.</p>
+          <pre><code>function sumTwoNumbers(a, b){
     return a+b;
-}</code></pre>    
-          </section>
+}</code></pre>
         </section>
-        <section>
-          <h2>Examples</h2>
-          <p>This was only the beginning. Here are some examples that use the web to deliver a beautiful experience.</p>
-          <ul>
-            <li><a href="www.histography.com">Histography</a> is a website which shows major events in earth history.</li>
-            <li><a href="https://www.legworkstudio.com">Legworkstudio</a> An agency showing of.</li>
-            <li><a href="https://www.sbs.com.au/theboat/">The boat</a> A visual novel in your browser.</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Tips and how to continue</h2>
-          <p>We all agree that the best way to learn programming is to do it. 
-            Here are some links that guide you with tutorials. </p>
-          <ul>
-              <li><a href="https://www.w3schools.com">w3schools</a> <p> Extensive website with a lot of tutorials and examples.</p></li>
-              <li><a href="jttps://freecodecamp.org">freecodecamp</a><p> A website which has a really nice introduction to Web Development.</p></li>
-              <li><a href=https://www.khanacademy.org/computing/computer-programming>Khan academy</a> Another free course with a focus in visual representations.</li>
-              <li><a href="https://edabit.com">edabit</a> Still another course, there are tons of them in the internet.</li>
-            </ul>
-        </section>
-        <section>
-          <h2>Powercoders</h2>
-          <p>Powercoders mission is to integrate refugees with work permits into the IT job market.
-            At the moment we are open for applications for the next round in 2020. 
-            We are always searching for new talent, volunteers and companies willing to partner with us.
-            So please share the word over us.
-          </p>
-        </section>
-        <section>
-          <h2>Feedback</h2>
-          <p>This is the first workshop we did so we would appreciate some feedback.
-            <ul>
-              <li>Was it interesting?</li>
-              <li>What are you taking away?</li>
-              <li>What was to fast/difficult?</li>
-            </ul>
-          </p>
-        </section>
-        <section>
-          <h1>Thank you!</h1>
-          <p>On to the apero ;)</p>
-        </section>
+      </section>
+      <section>
+        <h2>Examples</h2>
+        <p>This was only the beginning. Here are some examples that use the web to deliver a beautiful experience.</p>
+        <ul>
+          <li><a href="www.histography.com">Histography</a> is a website which shows major events in earth history.</li>
+          <li><a href="https://www.legworkstudio.com">Legworkstudio</a> An agency showing of.</li>
+          <li><a href="https://www.sbs.com.au/theboat/">The boat</a> A visual novel in your browser.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tips and how to continue</h2>
+        <p>We all agree that the best way to learn programming is to do it.
+          Here are some links that guide you with tutorials. </p>
+        <ul>
+          <li><a href="https://www.w3schools.com">w3schools</a>
+            <p> Extensive website with a lot of tutorials and examples.</p>
+          </li>
+          <li><a href="jttps://freecodecamp.org">freecodecamp</a>
+            <p> A website which has a really nice introduction to Web Development.</p>
+          </li>
+          <li><a href=https://www.khanacademy.org/computing/computer-programming>Khan academy</a> Another free course
+              with a focus in visual representations.</li> <li><a href="https://edabit.com">edabit</a> Still another
+              course, there are tons of them in the internet.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Powercoders</h2>
+        <p>Powercoders mission is to integrate refugees with work permits into the IT job market.
+          At the moment we are open for applications for the next round in 2020.
+          We are always searching for new talent, volunteers and companies willing to partner with us.
+          So please share the word over us.
+        </p>
+      </section>
+
+      <section>
+        <h1>End</h1>
+        <p>Thank you for your attention</p>
+      </section>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; 2019 Powercoders ZRH
       </div>
-      <footer>
-        <div class="copyright">
-          &copy; 2019 Powercoders ZRH
-        </div>
-      </footer>
-    </div><!-- Close reveal -->
+    </footer>
+  </div><!-- Close reveal -->
 
-    
-		<script src="js/reveal.js"></script>
 
-		<script>
+  <script src="js/reveal.js"></script>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
+  <script>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-		</script>
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/highlight/highlight.js', async: true },
+        { src: 'plugin/search/search.js', async: true },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
 
-  </body>
+  </script>
+
+</body>
+
 </html>
