@@ -1,20 +1,26 @@
 Send them the link to vscode and files before and ask them to install it!
 
+###
+
 First Introduction of yourself and participants 
 
 Explain web development. 
 
-Quickly Explain html and css, then start coding.
+Quickly explain html and css, then start coding the first website.
 
-After creating the file directly save with .html exstensions to prevent problems.
+Open the folder they downloaded in VSCode.
 
-Then start coding. Headings, p, image that they can download, add a link, add a style.
+After creating the file directly select html in VSCode that it will be saved as .html.
+
+Then start coding. Headings, p, image, add a link, add a style.
 
 After finishing with the website make short recap of HTML and CSS with the slides.
 
 Break
 
-With the example websitee show them the structure of seperating the files. 
+###
+
+With the example website show them the structure of seperating the files. 
 
 Then show the html structure with head and body. 
 
@@ -35,6 +41,8 @@ Show them some examples.
 Tell them how to proceed: Do it yourself, online tutorials, inspect.
 
 Then Info Session
+
+###
 
 Goals:  
     Show them that creating a website is not hard: done with creating it.
